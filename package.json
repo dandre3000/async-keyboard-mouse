@@ -1,0 +1,32 @@
+{
+  "name": "@dandre3000/async-keyboard-pointer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "DeAundre Payne",
+    "email": "apps.fondling796@passinbox.com",
+    "url": "https://github.com/dandre3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandre3000/async-keyboard-pointer.git"
+  },
+  "description": "Use keyboard and pointer events asynchronously.",
+  "keywords": [
+    "keyboard",
+    "mouse",
+    "pointer",
+    "input",
+    "browser"
+  ],
+  "files": [
+    "./build"
+  ],
+  "exports": {
+    "types": "./build/index.d.ts",
+    "import": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && bun build --entrypoints ./index.ts --outdir ./build --minify-whitespace --minify-syntax"
+  }
+}
